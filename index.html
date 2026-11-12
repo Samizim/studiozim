@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Studiozim</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Studiozim, estúdio indie brasileiro: Panicquarium! e Wall Street Blitz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&family=Lilita+One&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Studio Zim"><span class="zim" aria-hidden="true"><img class="dog d1" src="img/logo/dogyellow1.png" alt=""><img class="dog d1 grin" src="img/logo/dogyellow2.png" alt=""><img class="dog d2" src="img/logo/dogbrown1.png" alt=""><img class="dog d2 grin" src="img/logo/dogbrown2.png" alt=""><img class="dog d3" src="img/logo/dogblack1.png" alt=""><img class="dog d3 grin" src="img/logo/dogblack2.png" alt=""><img class="sign" src="img/logo/sign.png" alt=""></span></a>
+    <nav class="nav">
+      <a href="#jogos" data-i18n="nav.games">Jogos</a>
+      <a href="#panicquarium">Panicquarium!</a>
+      <a href="evolucao.html" data-i18n="nav.evo">Evolução</a>
+      <!-- <a href="#wall-street-blitz">Wall Street Blitz</a> (hidden for now) -->
+      <a href="#estudio" data-i18n="nav.studio">Estúdio</a>
+      <a href="#contato" data-i18n="nav.contact">Contato</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" id="lang-pt" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="hero">
+    <div class="bubbles" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow" style="color:#f7dd9c" data-i18n="hero.eyebrow">Novo jogo do estúdio</span>
+        <img class="hero-logo" src="img/panicquarium-logo.png" alt="Panicquarium!">
+        <p class="tagline" data-i18n="hero.tagline">Alimente os peixes, junte os dólares-de-areia e expulse os invasores das profundezas. O aquário mais caótico (e fofo) do pedaço.</p>
+        <div class="btns">
+          <a class="btn btn-main" href="#panicquarium" data-i18n="hero.cta">Conheça o jogo</a>
+          <a class="btn btn-ghost" href="#jogos" data-i18n="hero.cta2">Ver todos os jogos</a>
+        </div>
+      </div>
+      <div class="hero-shot"><img src="img/hero-trophy.jpg" alt="O troféu gigante Golden Gills no Meu Aquarinho, cercado de peixes" width="652" height="489"></div>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C 180 0 360 0 540 30 S 900 70 1080 40 S 1320 10 1440 30 V70 H0 Z"/></svg>
+  </div>
+
+  <!-- catalogue -->
+  <section id="jogos">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow" data-i18n="games.eyebrow">Nossos jogos</span>
+        <h2 data-i18n="games.title">Qual vai ser a próxima partida?</h2>
+        <p data-i18n="games.lead">Dois jogos, um desenvolvedor e muito café. Escolha o seu.</p>
+      </div>
+      <div class="games">
+        <a class="game-card pop" href="#panicquarium">
+          <div class="depth" aria-hidden="true">
+            <div class="d-plate"><img src="img/plate-reef.jpg" alt="" loading="lazy"></div>
+            <img class="d-layer d-buddy d-left" src="img/pet-queenguppy.png" alt="" loading="lazy">
+            <img class="d-layer d-buddy d-mid" src="img/pet-puffdaddy.png" alt="" loading="lazy">
+            <img class="d-layer d-buddy d-right" src="img/pet-croaky.png" alt="" loading="lazy">
+            <img class="d-layer d-logo" src="img/panicquarium-logo.png" alt="" loading="lazy">
+          </div>
+          <div class="body">
+            <div class="tags"><span class="tag" data-i18n="tag.casual">Casual</span><span class="tag" data-i18n="tag.action">Ação</span><span class="tag">Roguelike</span></div>
+            <h3>Panicquarium!</h3>
+            <p data-i18n="card.pq">Um aquário 3D cheio de peixes famintos, bichinhos ajudantes e invasores trapalhões.</p>
+          </div>
+        </a>
+        <a class="game-card pop" aria-disabled="true">
+          <div class="depth depth-wsb" aria-hidden="true">
+            <div class="d-plate"><img src="img/wsb/floor.jpg" alt="" loading="lazy"></div>
+            <img class="d-layer d-logo" src="img/wsb/logo.png" alt="" loading="lazy" style="width:56%;left:22%;top:3%">
+            <img class="d-layer d-pop d-left" src="img/wsb/intern.png" alt="" loading="lazy" style="--d:40;width:16%;left:4%;bottom:2%">
+            <img class="d-layer d-pop d-mid" src="img/wsb/bull.png" alt="" loading="lazy" style="--d:20;width:27%;left:36.5%;bottom:1%">
+            <img class="d-layer d-pop d-right" src="img/wsb/auditor.png" alt="" loading="lazy" style="--d:46;width:18%;right:4%;bottom:2%">
+          </div>
+          <div class="body">
+            <div class="tags"><span class="tag" data-i18n="tag.soon">Em breve</span><span class="tag">Roguelike</span><span class="tag" data-i18n="tag.clicker">Clicker</span></div>
+            <h3>Wall Street Blitz</h3>
+            <p data-i18n="card.wsb">Um pregão maluco cheio de estagiários, ursos famintos e auditores de olho no seu dinheiro.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Panicquarium game page -->
+  <section id="panicquarium" class="game-page">
+    <div class="wrap">
+      <div class="about">
+        <div class="about-text">
+          <span class="eyebrow" data-i18n="pq.eyebrow">Sobre o jogo</span>
+          <h2>Panicquarium!</h2>
+          <p data-i18n="pq.p1">Seus peixes estão com fome, as moedas estão caindo e um invasor gigante acabou de chegar. Em Panicquarium! você cuida de um aquário 3D cheio de personalidade: alimente os peixes, junte os dólares-de-areia que eles soltam e use o dinheiro para crescer o aquário.</p>
+          <p data-i18n="pq.p2">Para fechar cada fase, compre as três partes do baú do tesouro. No caminho, mais de 30 bichinhos ajudantes dão uma força, cada um com seu jeito (e seu trocadilho).</p>
+          <div class="facts">
+            <div class="fact"><b>25</b><span data-i18n="fact.levels">fases no Clássico</span></div>
+            <div class="fact"><b>30+</b><span data-i18n="fact.buddies">bichinhos ajudantes</span></div>
+            <div class="fact"><b>6</b><span data-i18n="fact.langs">idiomas</span></div>
+          </div>
+        </div>
+        <div class="how">
+          <img class="pet" src="img/pet-croaky.png" alt="" loading="lazy">
+          <h3 data-i18n="how.title">Como jogar</h3>
+          <ol>
+            <li><span data-i18n="how.1">Toque na água para soltar comida. Peixe bem alimentado cresce.</span></li>
+            <li><span data-i18n="how.2">Toque nos dólares-de-areia que os peixes deixam cair.</span></li>
+            <li><span data-i18n="how.3">Compre mais peixes, comida melhor e armas para o aquário.</span></li>
+            <li><span data-i18n="how.4">Invasor à vista? Toque nele até ele desistir.</span></li>
+            <li><span data-i18n="how.5">Junte as três partes do baú do tesouro e passe de fase.</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="sub">
+        <span class="eyebrow" data-i18n="modes.eyebrow">Modos de jogo</span>
+        <h2 data-i18n="modes.title">Um aquário, vários jeitos de jogar</h2>
+      </div>
+      <div class="modes">
+        <article class="mode pop"><div class="depth" aria-hidden="true"><div class="d-plate"><img src="img/layers/bg-lagoon.jpg" alt="" loading="lazy"></div><img class="d-layer d-pop d-mid" src="img/layers/goldfish.png" alt="" loading="lazy" style="--d:24;width:52%;left:24%;top:14%"><img class="d-layer d-pop d-left" src="img/layers/sanddollar.png" alt="" loading="lazy" style="--d:40;width:22%;left:5%;bottom:8%"><img class="d-layer d-pop d-right" src="img/layers/chest.png" alt="" loading="lazy" style="--d:46;width:32%;right:4%;bottom:4%"></div><div><h3 data-i18n="mode.classic">Clássico</h3><p data-i18n="mode.classic.d">5 aquários com 5 fases cada, e novos ajudantes pelo caminho.</p></div></article>
+        <article class="mode pop"><div class="depth" aria-hidden="true"><div class="d-plate"><img src="img/layers/bg-map.jpg" alt="" loading="lazy"></div><img class="d-layer d-pop d-mid" src="img/layers/ship.png" alt="" loading="lazy" style="--d:24;width:40%;left:30%;top:8%"><img class="d-layer d-pop d-left" src="img/layers/duck.png" alt="" loading="lazy" style="--d:42;width:28%;left:4%;bottom:4%"><img class="d-layer d-pop d-right" src="img/layers/compass.png" alt="" loading="lazy" style="--d:46;width:26%;right:4%;bottom:4%"></div><div><h3 data-i18n="mode.trip">Modo Mergulho</h3><p data-i18n="mode.trip.d">O roguelike: escolha rotas no Mapa do Mar, ganhe recompensas e itens a cada parada.</p></div></article>
+        <article class="mode pop"><div class="depth" aria-hidden="true"><div class="d-plate"><img src="img/layers/bg-home.jpg" alt="" loading="lazy"></div><img class="d-layer d-pop d-mid" src="img/layers/castle.png" alt="" loading="lazy" style="--d:20;width:36%;left:32%;bottom:2%"><img class="d-layer d-pop d-left" src="img/layers/fish.png" alt="" loading="lazy" style="--d:44;width:32%;left:4%;top:12%"><img class="d-layer d-pop d-right" src="img/layers/heart.png" alt="" loading="lazy" style="--d:40;width:20%;right:7%;top:10%"></div><div><h3 data-i18n="mode.bowl">Meu Aquarinho</h3><p data-i18n="mode.bowl.d">Sem pressa e sem invasores: decore e cuide do seu aquário particular, até offline.</p></div></article>
+        <article class="mode pop"><div class="depth" aria-hidden="true"><div class="d-plate"><img src="img/layers/bg-dock.jpg" alt="" loading="lazy"></div><img class="d-layer d-pop d-mid" src="img/layers/timburr-reel.png" alt="" loading="lazy" style="--d:24;width:28%;left:24%;bottom:44%"><img class="d-layer d-pop d-left" src="img/layers/bobber.png" alt="" loading="lazy" style="--d:40;width:10%;left:66%;bottom:20%"><img class="d-layer d-pop d-right d-under" src="img/layers/grouper.png" alt="" loading="lazy" style="--d:46;width:24%;right:4%;bottom:2%"></div><div><h3 data-i18n="mode.dock">Pesca no Cais</h3><p data-i18n="mode.dock.d">Jogue a linha do cais e veja o que vem no anzol.</p></div></article>
+        <article class="mode pop"><div class="depth" aria-hidden="true"><div class="d-plate"><img src="img/layers/bg-vent.jpg" alt="" loading="lazy"></div><img class="d-layer d-pop d-mid" src="img/layers/challenge.png" alt="" loading="lazy" style="--d:24;width:50%;left:25%;top:6%"><img class="d-layer d-pop d-left" src="img/layers/sanddollar.png" alt="" loading="lazy" style="--d:42;width:18%;left:6%;top:14%"><img class="d-layer d-pop d-right" src="img/layers/clock.png" alt="" loading="lazy" style="--d:46;width:24%;right:4%;bottom:6%"></div><div><h3 data-i18n="mode.challenge">Desafios</h3><p data-i18n="mode.challenge.d">Contra o relógio, desafio diário e o placar das marés.</p></div></article>
+        <article class="mode pop"><div class="depth" aria-hidden="true"><div class="d-plate"><img src="img/layers/bg-abyss.jpg" alt="" loading="lazy"></div><img class="d-layer d-pop d-mid" src="img/layers/starfish.png" alt="" loading="lazy" style="--d:24;width:50%;left:25%;top:4%"><img class="d-layer d-pop d-left" src="img/layers/bubble.png" alt="" loading="lazy" style="--d:44;width:18%;left:6%;bottom:10%"><img class="d-layer d-pop d-right" src="img/layers/bubble.png" alt="" loading="lazy" style="--d:40;width:13%;right:9%;top:12%"></div><div><h3 data-i18n="mode.bonus">Aventura Bônus</h3><p data-i18n="mode.bonus.d">Fases extras para quem sempre quer mais aquário.</p></div></article>
+      </div>
+
+      <div class="sub">
+        <span class="eyebrow" data-i18n="shots.eyebrow">Capturas de tela</span>
+        <h2 data-i18n="shots.title">Dá uma espiada no aquário</h2>
+      </div>
+      <div class="gallery">
+        <button type="button" class="wide"><img src="img/shot-lordlobe.jpg" alt="O chefão Lorde Miolo prendendo peixes em bolhas" loading="lazy"></button>
+        <button type="button"><img src="img/shot-seamap.jpg" alt="Mapa do Mar do Modo Mergulho" loading="lazy"></button>
+        <button type="button"><img src="img/shot-bonus.jpg" alt="Fase da Aventura Bônus com Águas Bagunçadas" loading="lazy"></button>
+        <button type="button"><img src="img/shot-fishbowl.jpg" alt="Meu Aquarinho cheio de peixes, com castelo e corais" loading="lazy"></button>
+        <button type="button"><img src="img/shot-clawdius.jpg" alt="O invasor Garrácio trocando de casca" loading="lazy"></button>
+        <button type="button"><img src="img/shot-trip-deep.jpg" alt="O invasor Mordisco avança sobre um peixinho assustado" loading="lazy"></button>
+      </div>
+      <p class="note" data-i18n="shots.note">Imagens reais do jogo, capturadas em português.</p>
+      <a class="evo-teaser" href="evolucao.html">
+        <span class="evo-teaser-pics" aria-hidden="true"><img src="img/evolution/menu-before.jpg" alt="" loading="lazy"><img src="img/evolution/menu-after.jpg" alt="" loading="lazy"></span>
+        <span><b data-i18n="evo.teaser.t">Do primeiro tchibum até hoje</b><small data-i18n="evo.teaser.d">Veja como o Panicquarium! mudou de escamas, tela por tela: antes e agora.</small></span>
+      </a>
+
+      <div class="get">
+        <div>
+          <h3 data-i18n="get.title">Mergulhe também</h3>
+          <p data-i18n="get.d">Chegando para Android e PC.</p>
+        </div>
+        <div class="btns">
+          <span class="store soon"><small data-i18n="store.soon">Em breve no</small><b>Google Play</b></span>
+          <span class="store soon"><small data-i18n="store.soon">Em breve no</small><b>Steam</b></span>
+        </div>
+      </div>
+
+      <div class="sub">
+        <span class="eyebrow" data-i18n="faq.eyebrow">Perguntas</span>
+        <h2 data-i18n="faq.title">Dúvidas de aquarista</h2>
+      </div>
+      <div class="faq">
+        <details><summary data-i18n="faq.q1">Em quais plataformas dá para jogar?</summary><p data-i18n="faq.a1">Android e Windows. As lojas aparecem aqui assim que o jogo sair.</p></details>
+        <details><summary data-i18n="faq.q2">Quais idiomas o jogo tem?</summary><p data-i18n="faq.a2">Português, inglês, espanhol, francês, alemão e italiano.</p></details>
+        <details><summary data-i18n="faq.q3">Precisa de internet?</summary><p data-i18n="faq.a3">Não. Dá para jogar tudo offline, inclusive o Meu Aquarinho.</p></details>
+        <details><summary data-i18n="faq.q4">Os peixes sofrem?</summary><p data-i18n="faq.a4">Só de fome de vez em quando. Aí é com você: solte a comida!</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wall Street Blitz game page -->
+  <section id="wall-street-blitz" class="wsb-page" hidden>
+    <div class="wrap">
+      <div class="about">
+        <div class="about-text">
+          <span class="eyebrow" data-i18n="wsb.eyebrow">Próximo jogo do estúdio</span>
+          <img class="wsb-logo" src="img/wsb/logo.png" alt="The Trading Floor: Wall Street Blitz" width="820" height="462" loading="lazy">
+          <span class="soon-pill" data-i18n="wsb.status">Em breve · em produção</span>
+          <p data-i18n="wsb.p1">Lembra do caos do aquário? Agora ele usa terno. Em Wall Street Blitz você comanda um pregão maluco: contrata estagiários, corretores e gestores de fundos, recolhe o dinheiro, as pastas azuis e as barras de ouro que eles soltam e mantém a firma de pé enquanto o mercado pega fogo.</p>
+          <p data-i18n="wsb.p2">É um roguelike: cada partida sobe 16 paradas pelo Roteiro do Portfólio, com loja offshore, fusões suspeitas, relíquias e uma pausa no bebedouro da Sala de Resgate Federal. Lá no topo, o Chefão C-Suite espera de martelo na mão.</p>
+          <div class="facts">
+            <div class="fact"><b>16</b><span data-i18n="wsb.fact.stops">paradas por partida</span></div>
+            <div class="fact"><b>15</b><span data-i18n="wsb.fact.threats">ameaças no pregão</span></div>
+            <div class="fact"><b>20</b><span data-i18n="wsb.fact.relics">relíquias</span></div>
+          </div>
+        </div>
+        <div class="how wsb-how">
+          <img class="pet" src="img/wsb/intern.png" alt="" loading="lazy">
+          <h3 data-i18n="wsb.how.title">Como funciona o pregão</h3>
+          <ol>
+            <li><span data-i18n="wsb.how.1">Antes do sino, contrate a equipe e monte as mesas.</span></li>
+            <li><span data-i18n="wsb.how.2">Varra com a maleta o dinheiro que a turma solta, antes que ele suma.</span></li>
+            <li><span data-i18n="wsb.how.3">Urso, auditor ou advogado no pregão? Martelo de Cessar e Desistir neles!</span></li>
+            <li><span data-i18n="wsb.how.4">Escolha a rota no mapa e suba até derrubar o Chefão C-Suite.</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="sub">
+        <span class="eyebrow" data-i18n="wsb.cast.eyebrow">O elenco</span>
+        <h2 data-i18n="wsb.cast.title">Quem bate ponto no pregão</h2>
+      </div>
+      <ul class="wsb-cast">
+        <li><img src="img/wsb/intern.png" alt="" loading="lazy"><b data-i18n="wsb.c.intern">Estagiário</b><small data-i18n="wsb.c.staff">Equipe</small></li>
+        <li><img src="img/wsb/broker.png" alt="" loading="lazy"><b data-i18n="wsb.c.broker">Corretor Sênior</b><small data-i18n="wsb.c.staff">Equipe</small></li>
+        <li class="foe"><img src="img/wsb/bear.png" alt="" loading="lazy"><b data-i18n="wsb.c.bear">Urso da Inflação</b><small data-i18n="wsb.c.threat">Ameaça</small></li>
+        <li class="foe"><img src="img/wsb/auditor.png" alt="" loading="lazy"><b data-i18n="wsb.c.irs">Auditor da Receita</b><small data-i18n="wsb.c.threat">Ameaça</small></li>
+        <li class="foe"><img src="img/wsb/boss.png" alt="" loading="lazy"><b data-i18n="wsb.c.boss">Chefão C-Suite</b><small data-i18n="wsb.c.bossrole">Chefão final</small></li>
+      </ul>
+
+      <div class="sub">
+        <span class="eyebrow" data-i18n="wsb.shots.eyebrow">Capturas de tela</span>
+        <h2 data-i18n="wsb.shots.title">Uma espiada atrás do balcão</h2>
+      </div>
+      <div class="gallery">
+        <button type="button" class="wide"><img src="img/wsb/shot-floor.jpg" alt="O pregão lotado de estagiários, corretores e gestores de fundos" loading="lazy"></button>
+        <button type="button"><img src="img/wsb/shot-buddies.jpg" alt="Os assistentes do pregão, do touro aos robôs" loading="lazy"></button>
+        <button type="button"><img src="img/wsb/shot-press.jpg" alt="Coletiva de imprensa: câmeras invadem o pregão" loading="lazy"></button>
+        <button type="button"><img src="img/wsb/shot-premarket.jpg" alt="Pré-mercado: contratando a equipe antes do sino" loading="lazy"></button>
+        <button type="button"><img src="img/wsb/shot-offshore.jpg" alt="Arte de conceito da Loja Offshore, num paraíso fiscal" loading="lazy"></button>
+        <button type="button"><img src="img/wsb/shot-bailout.jpg" alt="Arte de conceito da Sala de Resgate Federal" loading="lazy"></button>
+      </div>
+      <p class="note" data-i18n="wsb.shots.note">Capturas reais de uma versão em produção (ainda em inglês), mais duas artes de conceito no fim. Tudo pode mudar até o sino de abertura.</p>
+
+      <div class="get">
+        <div>
+          <h3 data-i18n="wsb.get.title">Quer saber primeiro?</h3>
+          <p data-i18n="wsb.get.d">Chegando primeiro para PC; celular vem depois. Mande um oi e a gente avisa quando a bolsa abrir.</p>
+        </div>
+        <div class="btns"><a class="btn btn-main" href="#contato" data-i18n="wsb.cta">Me avise</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- studio -->
+  <section id="estudio" class="studio">
+    <div class="wrap">
+      <div class="studio-text">
+        <span class="eyebrow" data-i18n="studio.eyebrow">O estúdio</span>
+        <h2 data-i18n="studio.title">Feito no Brasil, nadando pelo mundo</h2>
+        <p data-i18n="studio.p1">A Studiozim é um estúdio de um desenvolvedor só, no Brasil. Aqui cada peixe, piada e botão passa pelas mesmas mãos, e cada jogo nasce para ser alegre, bobo e difícil de largar.</p>
+        <p data-i18n="studio.p2">Gostamos de trocadilhos, de cores fortes e de jogos que cabem num intervalo de café, mas que você continua jogando depois que o café acabou.</p>
+      </div>
+      <div class="crew" aria-hidden="true">
+        <img src="img/pet-queenguppy.png" alt="" loading="lazy">
+        <img src="img/pet-croaky.png" alt="" loading="lazy">
+        <img src="img/pet-jiggles.png" alt="" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contato" class="contact">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow" data-i18n="contact.eyebrow">Contato</span>
+        <h2 data-i18n="contact.title">Bora conversar?</h2>
+        <p data-i18n="contact.lead">Imprensa, parcerias, criadores de conteúdo ou só para dizer qual é o seu peixe favorito: escreva para a gente.</p>
+      </div>
+      <div class="mailbox">
+        <code id="mail">contato@studiozim.com.br</code>
+        <button type="button" class="copy" id="copy-mail" data-i18n="contact.copy">Copiar</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Studio Zim"><span class="zim" aria-hidden="true"><img class="dog d1" src="img/logo/dogyellow1.png" alt=""><img class="dog d1 grin" src="img/logo/dogyellow2.png" alt=""><img class="dog d2" src="img/logo/dogbrown1.png" alt=""><img class="dog d2 grin" src="img/logo/dogbrown2.png" alt=""><img class="dog d3" src="img/logo/dogblack1.png" alt=""><img class="dog d3 grin" src="img/logo/dogblack2.png" alt=""><img class="sign" src="img/logo/sign.png" alt=""></span></a>
+    <nav>
+      <a href="#jogos" data-i18n="nav.games">Jogos</a>
+      <a href="evolucao.html" data-i18n="nav.evo">Evolução</a>
+      <a href="#estudio" data-i18n="nav.studio">Estúdio</a>
+      <a href="#contato" data-i18n="nav.contact">Contato</a>
+      <a href="https://panicquarium.com/privacy/" data-i18n="nav.privacy">Privacidade</a>
+    </nav>
+    <p data-i18n="footer.made">Feito com muito peixe no Brasil · © 2026 Studiozim</p>
+  </div>
+</footer>
+
+<dialog id="viewer"><img id="viewer-img" src="" alt=""></dialog>
+<script src="site.js"></script>
+</body>
+</html>
