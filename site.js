@@ -239,3 +239,11 @@ if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: re
   }, { threshold: .6 });
   document.querySelectorAll(".ba").forEach(function (ba) { seen.observe(ba); });
 }
+
+// phones: the header's menu button opens the nav as a drop-down (it's hidden under 860px); a link or a second tap closes it
+(function () {
+  var btn = document.querySelector('.menu-btn'), top = document.querySelector('.top');
+  if (!btn || !top) return;
+  btn.addEventListener('click', function () { var open = top.classList.toggle('open'); btn.setAttribute('aria-expanded', open ? 'true' : 'false'); });
+  top.querySelectorAll('.nav a').forEach(function (a) { a.addEventListener('click', function () { top.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }); });
+})();
