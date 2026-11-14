@@ -81,7 +81,7 @@ var EN = {
   "evo.levels.t": "From a wall of padlocks to tanks with name tags",
   "evo.levels.d": "Level select used to be a wall of gold padlocks. Now every tank has its own coloured ribbon, levels are portholes, and the level card shows stars, best score, hungry visitors and what's new in the shop.",
   "evo.hud.t": "The shop at your fingertips",
-  "evo.hud.d": "The shop moved to the sides, right under your thumbs: fish on the left, upgrades and the treasure chest on the right, and the top stays clear for the clock. Prefer the strip along the top? It is still in Options.",
+  "evo.hud.d": "The shop moved to the sides, right under your thumbs: fish on the left, upgrades and the treasure chest on the right, and the top keeps the clock, with your trip trinkets around it. Prefer the strip along the top? It is still in Options.",
   "evo.howto.t": "So long, parchment",
   "evo.howto.d": "Invader tips used to unroll on a parchment scroll with coral rollers. Pretty, but it hid the tank. Now they're big bold words on a soft dark band: read, tap, back to the fight.",
   "evo.levels2.t": "Every tank gets its own window",
