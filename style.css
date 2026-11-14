@@ -124,6 +124,18 @@ section { padding-block: 72px; }
 .gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .25s; }
 .gallery button:hover img { transform: scale(1.04); }
 .gallery .wide { grid-column: span 2; grid-row: span 2; aspect-ratio: auto; }
+.gallery[hidden] { display: none; }
+.shot-tabs { display: inline-flex; gap: 4px; padding: 4px; margin: 0 0 20px; border: 2px solid var(--line); border-radius: 999px; background: var(--surface); }
+.shot-tabs button { display: flex; align-items: center; gap: 8px; font: 800 .95rem var(--f-body); padding: 8px 18px; border: 0; border-radius: 999px; background: transparent; color: var(--ink); cursor: pointer; }
+.shot-tabs button[aria-selected="true"] { background: var(--orange); color: var(--orange-ink); }
+.shot-tabs svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+.shot-tabs svg circle { fill: currentColor; stroke: none; }
+.gallery.phones { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.gallery .phone { position: relative; aspect-ratio: auto; padding: 9px 24px; border-radius: 26px; background: #0d151c; box-shadow: inset 0 0 0 2px #2c3b47, 0 6px 18px rgba(0,0,0,.18); }
+.gallery .phone::before { content: ""; position: absolute; left: 9px; top: 50%; width: 7px; height: 7px; margin-top: -3.5px; border-radius: 50%; background: #2c3b47; }
+.gallery .phone img { display: block; height: auto; aspect-ratio: 16/9; border-radius: 10px; }
+.gallery .phone:hover img { transform: none; }
+.gallery .phone:hover { box-shadow: inset 0 0 0 2px #4a6375, 0 8px 22px rgba(0,0,0,.25); }
 .note { font-size: .85rem; color: var(--muted); margin-top: 12px; }
 dialog { border: 0; padding: 0; border-radius: 16px; max-width: min(1100px, 94vw); background: #000; }
 dialog::backdrop { background: rgba(4,16,26,.85); }
@@ -172,6 +184,9 @@ footer .brand { color: #fff; }
   .hero-shot { transform: none; }
 }
 @media (max-width: 480px) {
+  .gallery.phones { grid-template-columns: 1fr; }
+  .gallery .phone { padding: 7px 18px; border-radius: 20px; }
+  .gallery .phone::before { left: 6px; width: 6px; height: 6px; margin-top: -3px; }
   .modes, .gallery { grid-template-columns: 1fr; }
   .gallery .wide { grid-column: auto; grid-row: auto; }
   .facts { grid-template-columns: 1fr 1fr 1fr; }

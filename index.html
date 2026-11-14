@@ -136,7 +136,21 @@
         <span class="eyebrow" data-i18n="shots.eyebrow">Capturas de tela</span>
         <h2 data-i18n="shots.title">Dá uma espiada no aquário</h2>
       </div>
-      <div class="gallery">
+      <div class="shot-tabs" role="tablist" aria-label="Versão">
+        <button type="button" role="tab" id="tab-phone" aria-controls="shots-phone" aria-selected="true" data-set="phone"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6.5" width="20" height="11" rx="2.5"/><circle cx="4.6" cy="12" r=".9"/></svg><span data-i18n="shots.phone">Celular</span></button>
+        <button type="button" role="tab" id="tab-pc" aria-controls="shots-pc" aria-selected="false" data-set="pc" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4" width="19" height="12.5" rx="1.8"/><path d="M8.5 20h7M12 16.5V20"/></svg><span data-i18n="shots.pc">PC</span></button>
+      </div>
+      <div class="gallery phones" id="shots-phone" role="tabpanel" aria-labelledby="tab-phone">
+        <button type="button" class="phone"><img src="img/phone/menu.jpg" alt="Menu principal no celular, com o Quadro das Marés" loading="lazy"></button>
+        <button type="button" class="phone"><img src="img/phone/tank-reef.jpg" alt="Aquário cheio de peixes no celular, com a loja nas laterais" loading="lazy"></button>
+        <button type="button" class="phone"><img src="img/phone/modes.jpg" alt="Aba Modos no celular: Modo História, Modo Mergulho, Mergulho Bônus e Excursão do Cardume" loading="lazy"></button>
+        <button type="button" class="phone"><img src="img/phone/kraken.jpg" alt="A chefona Krakatoa no celular" loading="lazy"></button>
+        <button type="button" class="phone"><img src="img/phone/seamap.jpg" alt="Mapa do Mar no celular" loading="lazy"></button>
+        <button type="button" class="phone"><img src="img/phone/dock.jpg" alt="Pescaria no Pier no celular, com o castor puxando um peixe grande" loading="lazy"></button>
+        <button type="button" class="phone"><img src="img/phone/relax.jpg" alt="Aba Relaxar no celular: Meu Aquarinho, Pescaria no Pier e Aquário Livre" loading="lazy"></button>
+        <button type="button" class="phone"><img src="img/phone/tank-wreck.jpg" alt="Aquário do navio afundado no celular" loading="lazy"></button>
+      </div>
+      <div class="gallery" id="shots-pc" role="tabpanel" aria-labelledby="tab-pc" hidden>
         <button type="button" class="wide"><img src="img/shot-lordlobe.jpg" alt="O chefão Lorde Miolo prendendo peixes em bolhas" loading="lazy"></button>
         <button type="button"><img src="img/shot-seamap.jpg" alt="Mapa do Mar do Modo Mergulho" loading="lazy"></button>
         <button type="button"><img src="img/shot-bonus.jpg" alt="Fase da Aventura Bônus com Águas Bagunçadas" loading="lazy"></button>

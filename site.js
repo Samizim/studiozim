@@ -27,7 +27,7 @@ var EN = {
   "mode.challenge": "Challenges", "mode.challenge.d": "Time Trial, the Daily Dive and the Tide Board.",
   "mode.bonus": "Bonus Adventure", "mode.bonus.d": "Extra levels for anyone who always wants more tank.",
   "shots.eyebrow": "Screenshots", "shots.title": "Take a peek inside the tank",
-  "shots.note": "Real in-game captures, taken in Portuguese.",
+  "shots.note": "Real in-game captures, taken in Portuguese.", "shots.phone": "Phone", "shots.pc": "PC",
   "get.title": "Dive in too", "get.d": "Coming to Android and PC.", "store.soon": "Coming soon on",
   "faq.eyebrow": "Questions", "faq.title": "Fishkeeper FAQ",
   "faq.q1": "Which platforms can I play on?", "faq.a1": "Android and Windows. Store links show up here as soon as the game launches.",
@@ -247,3 +247,13 @@ if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: re
   btn.addEventListener('click', function () { var open = top.classList.toggle('open'); btn.setAttribute('aria-expanded', open ? 'true' : 'false'); });
   top.querySelectorAll('.nav a').forEach(function (a) { a.addEventListener('click', function () { top.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }); });
 })();
+
+// screenshots: phone & PC tabs
+var tabs = document.querySelectorAll(".shot-tabs [role=tab]");
+function showSet(t) {
+  tabs.forEach(function (b) { var on = b === t; b.setAttribute("aria-selected", on); b.tabIndex = on ? 0 : -1; document.getElementById(b.getAttribute("aria-controls")).hidden = !on; });
+}
+tabs.forEach(function (b, i) {
+  b.addEventListener("click", function () { showSet(b); });
+  b.addEventListener("keydown", function (e) { if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return; var n = tabs[(i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length]; showSet(n); n.focus(); });
+});
