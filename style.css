@@ -162,6 +162,8 @@ dialog img { width: 100%; }
 /* contact */
 .contact { text-align: left; }
 .mailbox { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; background: var(--surface); border: 2px dashed var(--line); border-radius: 18px; padding: 18px 22px; max-width: 640px; }
+.contact-links { margin-top: 18px; font-weight: 700; }
+.contact-links a { color: inherit; }
 .mailbox code { font: 800 1.15rem var(--f-body); user-select: all; word-break: break-all; }
 .copy { margin-left: auto; font: 700 .9rem var(--f-body); padding: 8px 14px; border-radius: 999px; border: 2px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer; }
 
